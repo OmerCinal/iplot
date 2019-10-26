@@ -14,7 +14,6 @@ def generate_random_dataframe(m=4, n=10):
 def test_iplot(m=4, n=10, **kwargs):
 	df = generate_random_dataframe(m, n)
 	fig = df.iplot(**kwargs)
-	fig.show()
 	return fig
 
 if __name__ == '__main__':
