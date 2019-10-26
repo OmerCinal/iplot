@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 
 from distutils.core import setup
-
-import sys
-from ._version import version
-
-sys.path.append("/iplot")
+from ipear._version import version
 
 setup(
     name="ipear",
@@ -14,5 +10,8 @@ setup(
     author="Omer Cinal",
     author_email="omercinal3@gmail.com",
     url="https://github.com/OmerCinal/iplot",
-    packages=["plotly", "pandas", "distutils", "distutils.command"],
+    install_requires=[
+        'plotly',
+        'pandas',
+    ]
 )
